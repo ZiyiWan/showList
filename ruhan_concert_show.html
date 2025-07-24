@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ruhan's Secret Show · 节目单</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+
+  <!-- 粒子背景 -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- dotlottie 动画组件 -->
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'ZCOOL XiaoWei', serif;
+      min-height: 100vh;
+      background: linear-gradient(to bottom right, #f9f3f0, #ffe4e1);
+      overflow-x: hidden;
+    }
+
+    /* 花瓣背景动画 */
+    .bg-lottie {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -2;
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 80px auto;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #e91e63;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      font-size: 15px;
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      font-size: 18px;
+      color: #333;
+      margin: 16px 0 4px;
+    }
+
+    hr.song-line {
+      width: 160px;
+      border: none;
+      border-top: 1px dashed #ccc;
+      margin: 0 auto 16px;
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .header-flex h1 {
+      font-size: 28px;
+      color: #e91e63;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 页面主要内容 -->
+  <div class="container">
+    <div class="header-flex">
+      <h1>Ruhan's Secret Show · 节目单</h1>
+      <dotlottie-wc src="https://lottie.host/2c6d0d3d-f2f7-47b1-91c0-76063e81d563/wUReEiQ3d6.lottie"
+        style="width: 90px;height: 90px" speed="1" autoplay loop></dotlottie-wc>
+    </div>
+
+    <div class="info">📍 20 Somerset Dr, Dandenong North VIC</div>
+
+    <ul>
+      <li>🌙 天亮就要走</li>
+      <hr class="song-line">
+      <li>🎤 都是你</li>
+      <hr class="song-line">
+      <li>🎵 抉择不定</li>
+      <hr class="song-line">
+      <li>💃 跳楼机</li>
+      <hr class="song-line">
+      <li>🦁 狮子座</li>
+      <hr class="song-line">
+      <li>❤️ 思念病</li>
+      <hr class="song-line">
+      <li>🌄 这一生关于你的风景</li>
+      <hr class="song-line">
+      <li>👧 女孩</li>
+      <hr class="song-line">
+      <li>👗 连衣裙</li>
+      <hr class="song-line">
+    </ul>
+  </div>
+
+</body>
+
+</html>
